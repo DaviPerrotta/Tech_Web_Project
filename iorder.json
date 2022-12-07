@@ -1,0 +1,43 @@
+{
+
+  "Prenotazioni" :{
+    "003939028":{
+      "ora": "16:40",
+      "data": "08/12/2000",
+      "n_persone": 10,
+      "telefono" : "3338765677"
+    } 
+    
+  },
+
+  "Ordini":{
+    "003939028":{
+          "Pasta con i fagioli":{
+            "qt": 3,
+            "costo": "30",
+            "note": ""
+          }
+    } 
+    
+  },
+
+  "Menu_Categorie":{
+    "Primi":{
+      "Pasta con i fagioli":{
+        "ingredienti" : "pasta, fagioli",
+        "prezzo": 10,
+        "img": "/imgmenu"
+      }
+    }
+    
+  },
+  
+  "Tavoli": 10,
+
+  "Credenziali":{
+    "login": "Ciaobello",
+    "pwd": "kdmlmdlqd"
+    
+  }
+  
+}
