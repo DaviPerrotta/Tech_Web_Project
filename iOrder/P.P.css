@@ -1,0 +1,301 @@
+
+/* COMPUTER  */
+
+body {
+    background-color: #0d0d0d;
+
+
+}
+/*
+p3{
+    color: #a2855b;
+    text-align: center;
+    top:100px;
+    font-size: 26px;
+
+
+ */
+
+.inf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*height: 920px;*/
+    background-image: url('Ristorante..jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width:1660px ;
+    height:960px;
+    margin-left:10px;
+    padding:0;
+}
+
+nav{
+    background-color: #a2855b;
+    text-align: center;
+    width:1660px;
+    height:50px;
+    margin:0;
+    padding:0;
+    font-family: "Courier New", fantasy;
+}
+
+nav ul{
+    list-style-type: none; /* Per far sparire i pallini */
+    margin:0;
+    padding:0;
+    font-family: "Courier New", fantasy;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color:black;
+    font-family: "Courier New", fantasy;
+}
+
+nav li:hover{
+    background-color: #8a5505;
+    font-family: "Courier New", fantasy;
+}
+
+nav li{
+    display:inline-block;
+    padding:20px;
+    font-family: "Courier New", fantasy;
+}
+
+p {
+    font-size: 60px;
+    color: white;
+    height: 190px;
+    opacity: 1;
+    font-family: "Lucida Handwriting", "Brush Script MT", fantasy;
+
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 1650px;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+
+p1 {
+        font-size: 50px;
+        color: #a2855b;
+        height: 100px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+
+        opacity: 1;
+        font-family: "Lucida Handwriting", "Brush Script MT", fantasy;
+
+    }
+
+
+
+p2 {
+        font-size: 18px;
+        color: #a2855b;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+}
+
+
+p4 {
+    font-size: 22px;
+    color: #a2855b;
+    left: 20px;
+    font-family: "Courier New", fantasy;
+    }
+
+
+
+.logotipo_visibile {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: transform 0.8s, opacity 0.8s;
+        -webkit-transition-delay: 0.1s;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+
+
+.title_option {
+        padding-top: 100px;
+
+    }
+
+
+
+    .box1 {
+        padding-top: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+
+.form-control-lg {
+        border-radius: 80px;
+        font-size: 18px;
+        padding: 15px;
+        background-color: #000000;
+        text-decoration-color: #a2855b;
+    }
+
+
+
+.form-control-lg {
+        min-height: calc(10px + 10px + 10px);
+    }
+
+
+.inserimento {
+        padding-top: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+.form-control {
+        width: 650px;
+        min-height: 10px;
+    }
+
+
+.mb-4 {
+    margin-bottom: 2rem!important;
+}
+
+.box1 p4.outline {
+    background: transparent;
+    border: 3px solid #a2855b;
+    border-radius: 44px;
+    color: #FFFFFF;
+    font-size: 18px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    white-space: nowrap;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.form-control1{
+    width: 110px;
+    min-height: 10px;
+}
+
+.form-control2{
+    width: 130px;
+    min-height: 10px;
+}
+
+.menù{
+    padding-top: 70px;
+}
+
+
+
+.title-block {
+    display: inline-block;
+
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    font-size: 12px;
+    line-height: 10px;
+    font-family: "Sweet Sans Pro Web", fantasy;
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+div{
+    display: block;
+}
+
+.form-control1{
+    width: 110px;
+    min-height: 10px;
+}
+
+.form-control3{
+    width: 150px;
+    min-height: 10px;
+}
+
+.form-control4{
+    width: 160px;
+    min-height: 10px;
+}
+
+.form-control5{
+    width: 650px;
+    min-height: 10px;
+}
+
+.form-control6{
+    width: 650px;
+    min-height: 10px;
+}
+
+.form-control7 {
+    width: 250px;
+    min-height: 10px;
+    font-size:18px;
+    text-align: center;
+    border-radius: 30px;
+    height: 30px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.date-picker{
+    display: flex;
+}
+
+.date-picker .time{
+    flex: 2;
+}
+
+.date-picker .date{
+    flex: 3;
+}
+
+.title{
+    font-size: 32px;
+}
+
+
+.logotipo_visibile2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.8s, opacity 0.8s;
+    -webkit-transition-delay: 0.1s;
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
+
+.table{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #a2855b ;
+}
+
+
