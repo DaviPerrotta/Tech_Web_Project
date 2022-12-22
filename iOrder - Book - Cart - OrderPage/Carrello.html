@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iOrder - Your cart</title>
+    <link rel="stylesheet" href="css/Stile.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+        <a href="index.html">Order</a>
+      <a href="Prenotazioni.html">Book</a>
+      <a href="#">Restricted Area</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <div class="topBar">
+      <span style="font-size:32px;cursor:pointer; color:#ffffff" onclick="openNav()"> &#9776;</span>
+      <span class="testo" style="font-size: 34px">Your Cart</span> <span> </span>
+    </div>
+
+    <div style="display: flex; margin-top: 50px; justify-content: center; margin-left: 30px">
+        <span class="testo" style="font-size: 32px">Your Orders</span>
+    </div>
+
+    <div class="tabellone">
+        <div style="overflow-y:auto; width: 1250px; border: solid grey 1px; border-radius: 25px">
+            <div class="w-100 header">
+                <div class="row">
+                    <div class="big-text" style="border-bottom: solid grey 1px">Item Name</div>
+                    <div class="big-text" style="border-bottom: solid grey 1px">Quantity</div>
+                    <div class="big-text" style="border-bottom: solid grey 1px">Price</div>
+                </div>
+            </div>
+            <div class="w-100 body" id="orderStart">
+                <div class="row">
+                    <div class="element w-image"> <img src="images/puocPanino.jpg">
+                        <span>Panino</span>
+                    </div>
+                    <div class="element">1</div>
+                    <div class="element">10€</div>
+                </div>
+            </div>
+            <div class="w-100 footer">
+                <span class="big-text">Totale: </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="JS/jsBookCart.js"></script>
+    <script src="JS/jsCartOnly.js"></script>
+</body>
+</html>
