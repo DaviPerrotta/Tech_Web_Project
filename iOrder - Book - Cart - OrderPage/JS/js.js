@@ -266,7 +266,7 @@
         //TRASFERIMENTO CONTENUTO DEL CARRELLO A LOCALSTORAGE PER PASSARLO ALLA PAGINA CARRELLO
         //PROCEDE SOLO QUANDO VIENE PREMUTO IL TASTO 'AGGIUNGI' DI UN PRODOTTO
         localStorage.setItem("carrelloStorato", JSON.stringify(carrello))
-        //STAMPA PER CAPIRE CHE CAZZO STIAMO TRASFERENDO
+        //STAMPA PER CAPIRE CHE STIAMO TRASFERENDO
         console.log("carrelloStorato")
         console.log(localStorage.getItem("carrelloStorato"));
     }
