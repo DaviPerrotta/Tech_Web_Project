@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Area riservata</title>
+
+    
+    <link href="css/Pp.css" rel="stylesheet" type="text/css">
+    <link href="css/p_p_resp.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+            
+        
+     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+        
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>      
+
+    <script src="js/pp.js"></script>
+
+    <style>
+        @media screen and (min-width:320px) and (max-width:999px) {
+            .box1 p2 {
+                width: 5%;
+                height: 5%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="inf">
+
+        <p>
+
+             <strong>WELCOME TO RESERVED AREA</strong>
+        </p>
+</div>
+
+
+  <div class="title-block">
+    <nav>
+        <ul>
+            <li><a href="#Ordini"><strong>Ordini</strong></a> </li>
+            
+            <li><a href="#Menù"><strong>Menù</strong></a> </li>
+            <li><a href="#Tables"><strong>Tables</strong></a> </li>
+            <li><a href="#Reservations"><strong>Reservations</strong></a> </li>
+            <li><a href="#Photo_Gallery"><strong>Photo Gallery</strong></a> </li>
+
+        </ul>
+    </nav>
+  </div>
+
+
+  <div class="title_option" id="Ordini">
+    <p1>
+       Ordini
+    </p1>
+</div>
+
+<div id="tables_ordini">
+
+</div>
+
+<div class="logotipo_visibile" >
+    <img src="https://www.ristorantecracco.it/wp-content/themes/cracco/img/logotipo.svg" alt="simble">
+</div>
+
+
+<div class="title_option" id="Menù">
+    <p1>
+        Menù
+    </p1>
+</div>
+
+
+<div class="options">
+
+    <p2>
+            The first category is dedicated to the menù and all there lots of functionalities<br>
+            There the owner can add all the categories of meals with prices only pressing the plus button.
+    </p2>
+
+</div>
+
+<div class="menù">
+
+    
+
+    <div class="box1">
+
+        <p4 class="outline">
+            MAIN COURSE
+        </p4>
+
+
+        <p2>
+            <button onclick="FirstCourse()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-più-50(@1x).png" alt="plus" style="width:79%;height:79%;"></button>
+        </p2>
+
+        <p2>
+            <button onclick="First_Course()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-cestino-50(@1x).png" alt="delete" style="width:79%;height:79%;"></button>
+        </p2>
+    </div>
+
+    <div class="inserimento">
+        <div class ="form-outline mb-4" >
+            <input type="text" id="text2" style="color: #a2855b"
+                   class="form-control form-control-lg" placeholder="Add a description" >
+            <input type="number" id="number2" style="color: #a2855b"
+                   class="form-control1 form-control-lg" placeholder="Add a price" >
+            <input type="text" id="number7" style="color: #a2855b"
+                   class="form-control2 form-control-lg" placeholder="Add a currency" >
+        </div>
+    </div>
+
+    <div class="box1">
+
+        <p4 class="outline">
+            SECOND MAIN COURSE
+        </p4>
+
+
+        <p2>
+            <button onclick="SecondCourse()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-più-50(@1x).png" alt="plus" style="width:79%;height:79%;"></button>
+        </p2>
+
+        <p2>
+            <button onclick="Second_Course()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-cestino-50(@1x).png" alt="delete" style="width:79%;height:79%;"></button>
+        </p2>
+    </div>
+
+    <div class="inserimento">
+        <div class ="form-outline mb-4" >
+            <input type="text" id="text3" style="color: #a2855b"
+                   class="form-control form-control-lg" placeholder="Add a description" >
+            <input type="number" id="number3" style="color: #a2855b"
+                   class="form-control1 form-control-lg" placeholder="Add a price" >
+            <input type="text" id="number8" style="color: #a2855b" min="1" max="12"
+                   class="form-control2 form-control-lg" placeholder="Add a currency" >
+        </div>
+    </div>
+
+    <div class="box1">
+
+        <p4 class="outline">
+            DESSERTS
+        </p4>
+
+        <p2>
+            <button onclick="Desserts()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-più-50(@1x).png" alt="plus" style="width:79%;height:79%;"></button>
+        </p2>
+
+        <p2>
+            <button onclick="_Desserts()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-cestino-50(@1x).png" alt="delete" style="width:79%;height:79%;"></button>
+        </p2>
+    </div>
+
+    <div class="inserimento">
+        <div class ="form-outline mb-4" >
+            <input type="text" id="text4" style="color: #a2855b"
+                   class="form-control form-control-lg" placeholder="Add a description" >
+            <input type="number" id="number4" style="color: #a2855b"
+                   class="form-control1 form-control-lg" placeholder="Add a price" >
+            <input type="text" id="number9" style="color: #a2855b"
+                   class="form-control2 form-control-lg" placeholder="Add a currency" >
+        </div>
+    </div>
+
+
+    <div class="box1">
+
+        <p4 class="outline">
+            DRINKS
+        </p4>
+
+
+        <p2>
+            <button onclick="Addmenù()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-più-50(@1x).png" alt="plus" style="width:79%;height:79%;"></button>
+        </p2>
+
+        <p2>
+            <button onclick="cancellmenù()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-cestino-50(@1x).png" alt="delete" style="width:79%;height:79%;"></button>
+        </p2>
+    </div>
+
+    <div class="inserimento">
+        <div class ="form-outline mb-4" >
+            <input type="text" id="text5" style="color: #a2855b"
+                   class="form-control form-control-lg" placeholder="Add a description " >
+            <input type="number" id="number5" style="color: #a2855b"
+                   class="form-control1 form-control-lg" placeholder="Add a price" >
+            <input type="text" id="number10" style="color: #a2855b"
+                   class="form-control2 form-control-lg" placeholder="Add a currency" >
+        </div>
+    </div>
+</div>
+
+
+
+<div class="logotipo_visibile" >
+    <img src="https://www.ristorantecracco.it/wp-content/themes/cracco/img/triangle.svg" alt="simble">
+</div>
+
+
+
+    <div class="title_option" id="Tables">
+        <p1>
+            Tables
+        </p1>
+    </div>
+
+
+    <div class="options">
+
+        <p2>
+            The second category is dedicated to seats <br>
+            There the owner can register how many seats there are inside and outside the restaurant.
+        </p2>
+
+    </div>
+
+    <div class="menù">
+
+        <div class="box1">
+
+            <p4 class="outline">
+                TABLES 
+            </p4>
+
+            <p2>
+                
+                <button onclick="Add()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-più-50(@1x).png"   alt="plus" style="width:79%;height:79%;"></button>
+
+            </p2>
+            
+
+        </div>
+
+            <div class="inserimento">
+                <div class ="form-outline mb-4" >
+                    <input type="number" id="number0" style="color: #a2855b"
+                        class="form-control3 form-control-lg" placeholder="Add the number " >
+
+                </div>
+            </div>
+
+       
+    </div>
+
+
+<div class="logotipo_visibile" >
+    <img src="https://www.ristorantecracco.it/wp-content/themes/cracco/img/triangle.svg" alt="simble">
+</div>
+
+<section data-id="3">
+    <div class="title_option" id="Reservations">
+        <p1>
+            Reservations
+        </p1>
+    </div>
+
+
+    <div class="options">
+
+        <p2>
+            The third category is dedicated to reservations <br>
+            There the owner can see all reservations and can visualize all reservation's informations.<br>
+            He also has the privilege to add or remove a reservation by pressing the two bottons below.
+        </p2>
+
+    </div>
+
+    <div class="menù">
+
+        <div class="box1">
+
+            <p4 class="outline">
+                RESERVATION
+            </p4>
+
+            <p2>
+                <button onclick="reservation()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-più-50(@1x).png" alt="plus" style="width:79%;height:79%;"></button>
+            </p2>
+
+            <p2>
+                <button onclick="_reservation()" style="background-color: black; border-radius: 15px;"><img src="Images/icons8-cestino-50(@1x).png" alt="delete" style="width:79%;height:79%;"></button>
+            </p2>
+        </div>
+
+        <div class="inserimento">
+            <div class ="form-outline mb-4" >
+
+                <input type="text" id="name" style="color: #a2855b" class="form-control7 form-control-lg" placeholder="Add the name" required>
+
+                <input type="number" id="cellnumber" style="color: #a2855b" class="form-control7 form-control-lg" placeholder="Cellphone Number" required>
+
+                <input type="number" id="number" min="1" max="6" style="color: #a2855b;" class="form-control7 form-control-lg" placeholder="N° people" required>
+
+                <input style="color: #a2855b " id="Data" type="date" class="form-control-lg date form-control7" required>
+
+                <input style="color: #a2855b" id="Ora" type="time" class="form-control-lg time form-control7" required>
+
+                <input type="text" id="notes" style="color: #a2855b" class="form-control7 form-control-lg" placeholder="Add Notes" >
+
+                <input type="number" id="rand" style="color: #a2855b;" class="form-control7 form-control-lg" placeholder="N_reserved">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="logotipo_visibile" >
+    <img src="https://www.ristorantecracco.it/wp-content/themes/cracco/img/triangle.svg" alt="simble">
+</div>
+
+<section id="#Photo_Gallery" data-id="4">
+    <div class="title_option">
+        <p1>
+            Photo Gallery
+        </p1>
+    </div>
+
+
+    <div class="options">
+
+        <p2>
+            The fourth category is dedicated to photos <br>
+            There the owner can add all the photos he wants
+        </p2>
+
+    </div>
+
+    <div class="menù">
+
+        <div class="box1">
+
+            <p4 class="outline" id="Photo Gallery">
+                Photos
+            </p4>
+
+        </div>
+
+       
+       
+        <!-- Fare un tasto che mi fa caricare le foto --> 
+                    <input type="file" id="myfile" style="display:none;">
+            <button id="buttonm" onclick="document.getElementById('myfile').click()">Scegli qui</button>
+    </div>
+
+    <div class="contrainer-gallery">
+
+          
+        <div class="swiper" style=" max-height: 270px;">
+         
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide side-crop"><img src="Images/img2.jpg"></div>
+                <div class="swiper-slide side-crop"><img src="Images/img1.jpg"></div>
+                <div class="swiper-slide side-crop"><img src="Images/img3.png"></div>
+                <div class="swiper-slide side-crop"><img src="Images/img4.jpg"></div>
+
+            </div>
+        
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+  
+        </div>
+    </div>
+
+</section>
+
+
+<div class="logotipo_visibile" >
+    <img src="https://www.ristorantecracco.it/wp-content/themes/cracco/img/logotipo.svg" alt="simble">
+</div>
+
+<script type="text/javascript">
+    const swiper = new Swiper('.swiper',{
+        loop: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+</body>
+</html>

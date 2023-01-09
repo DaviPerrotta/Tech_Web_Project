@@ -1,0 +1,224 @@
+<?xml version=“1.0” encoding=“UTF-8” ?>
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/css.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="js/js.js"> </script>
+
+<html lang=”it” id="id0">
+	<head>
+		<title>IOrder</title>
+	</head>
+	<body>
+
+        <!-- BARRA A SCORRIMENTO LATERALE -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="index.html">Order</a>
+            <a href="Prenotazioni.html">Book</a>
+            <a href="Loginpp.html">Reserved Area</a>
+            <a href="#">About Us</a>
+        </div>
+
+        <!-- header -->
+
+		<div class="header">
+            <div id="header" class="margin3">
+                <a style="float: left; cursor: pointer" ><img class="icon_resize" src="Images/menuicon_desk.png" onclick="openNav()"></a>
+                <a class="title" style="float: center;">iOrder</a>
+                <a onclick="send_ordine()" style="float: right; cursor: pointer"><img class="icon_resize" src="Images/carticon_desk.png"></a>
+            </div>
+
+        </div>
+
+    
+        <!-- gallery -->
+        
+        
+        <div class="contrainer-gallery">
+
+          
+            <div class="swiper" style=" max-height: 270px;">
+             
+                <div class="swiper-wrapper">
+                
+                    <div class="swiper-slide side-crop"><img src="Images/img1.jpg"></div>
+                    <div class="swiper-slide side-crop"><img src="Images/img2.jpg"></div>
+                    <div class="swiper-slide side-crop"><img src="Images/img3.png"></div>
+                    <div class="swiper-slide side-crop"><img src="Images/img4.jpg"></div>
+
+                </div>
+            
+    
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+    
+      
+            </div>
+        </div>
+        
+        <!-- description -->
+        <div class="container_description">
+
+            
+            <img class="logo_img" src="Images/logo.jpg" alt="logo_restourant">
+            
+            <div>
+                <a class="title" > Puok Burger </a>
+                <br>
+                <a style="color: azure; letter-spacing: 0px;" class="link_address" href="https://goo.gl/maps/kDYsEpMcVsQrd9Kj7"> Via Francesco Cilea, 104, 80127 Napoli NA </a>  
+            </div>
+            
+            
+        </div>
+    
+
+        <!--a style=" display: block; background-color: #2C2F31; color: azure;">Barra ricerca piatto</a-->
+        <!-- MENU -->
+        
+        <div class="container_menutable " >
+            <div class="wrapper">
+                <section class="unknown">
+                    <div class="left_colon">
+                        <ul id="category_list">
+                            
+                        </ul>
+                    </div>
+                </section>
+                
+                
+                <div id="r_colon" class="right_colon"  >
+                    <!--section id="id1"  >
+                        
+                            <div onclick="open_menulist('id1')"  class="title2 " >
+                                <a  href="#id1"> Panini </a>
+                                <img class ="category_arrow" src="Images/destra40.png" ></img>
+                            </div>
+                            <div class="menu-list" >
+                                <button onclick="hey()" class="menu-item ">
+                           
+                                    <div class="menu_img">
+                                        <img src="Images/imgmenu1.jpg">
+                                    </div>
+                                    <div class="disposing-v">
+                                        <p class="menu-description">Django</p>
+                                        <p class="menu-description">Hamburger, Cipolle caramellate, Provola</p>
+                                        <p>10$</p>
+                                    </div>
+                                    <img class="menu_icon_right" src="Images/destra40.png">
+                                
+                                </button>
+                                <button onclick="hey()" class="menu-item">
+                               
+                                    <div class="menu_img">
+                                        <img src="Images/imgmenu1.jpg">
+                                    </div>
+                                    <div class="disposing-v">
+                                        <p class="menu-description">Django</p>
+                                        <p class="menu-description">Hamburger,Cipolle</p>
+                                        <p>10$</p>
+                                    </div>
+                                    <img class="menu_icon_right" src="Images/destra40.png">
+                                
+                                </button>
+                                <button onclick="hey()" class="menu-item">
+                               
+                                    <div class="menu_img">
+                                        <img src="Images/imgmenu1.jpg">
+                                    </div>
+                                    <div class="disposing-v">
+                                        <p class="menu-description">Django</p>
+                                        <p class="menu-description">Hamburger,Cipolle</p>
+                                        <p>10$</p>
+                                    </div>
+                                    <img class="menu_icon_right" src="Images/destra40.png">
+                                
+                                </button>
+                                <button onclick="hey()" class="menu-item">
+                               
+                                    <div class="menu_img">
+                                        <img src="Images/imgmenu1.jpg">
+                                    </div>
+                                    <div class="disposing-v">
+                                        <p class="menu-description">Django</p>
+                                        <p class="menu-description">Hamburger,Cipolle</p>
+                                        <p>10$</p>
+                                    </div>
+                                    <img class="menu_icon_right" src="Images/destra40.png">
+                                
+                                </button>
+                            
+                        </div>
+                        
+                        
+                        
+                        
+                    </section-->
+                    
+                    
+                    
+                        
+                </div>
+            </div>    
+               
+        </div>
+
+        <div id="modal" class="modal" >
+            <div class="modal_content">
+                <div style="display:block; padding-bottom: 34px;">
+                    
+                    <span onclick="close_mod()" id="close_modal" class="close_button">&times;</span>
+                </div>
+                
+                <div class="disposing-v">
+                    <a id="title_item"class="title3"></a>
+                    <div class="disposing-h">
+                        <button onclick="change_amount_item('-')" id="modal_min" >
+                            -
+                        </button>
+                        <p id="amount_item">1</p>
+                        <button onclick="change_amount_item('+')"  id="modal_plus">
+                            +
+                        </button>
+                    </div>
+                    <button id="add_carrello_button" class="send_button">
+                        <span  style="float: left;">Aggiungi </span>
+                        <span  style="float: right; ">€</span>
+                        <span id="cost_item" style="letter-spacing: 3px; float: right;">10,00 </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!--  -->
+	</body>
+
+<script type="text/javascript">
+    const swiper = new Swiper('.swiper',{
+        loop: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+</html>
