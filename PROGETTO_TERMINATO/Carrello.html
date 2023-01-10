@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="UTF-8">
+    <title>iOrder - Your cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Stile.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+        <a href="index.html">Order</a>
+      <a href="Prenotazioni.html">Book</a>
+      <a href="Loginpp.html">Restricted Area</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <div class="header">
+        <div id="header" class="margin3">
+            <a style="float: left; cursor: pointer" ><img class="icon_resize" src="Images/menuicon_desk.png" onclick="openNav()"></a>
+            <a class="title" style="float: center;">iOrder</a>
+            <button onclick="invia_ordine()" id="button_inviaordine"  style="float:right;color:azure; border-radius: 30px;background-color: #df9937; border: 0.9px solid azure; font-size: 22px; padding:7px; font-family: 'Lucida Handwriting', fantasy; letter-spacing: 2px;">
+                Invia
+            </button>
+        </div>
+
+    </div>
+
+    <div style="display: flex; margin-top: 50px; justify-content: center; margin-left: 30px">
+        <span class="testo" style="font-size: 32px">Your Orders</span>
+    </div>
+
+    <div class="tabellone">
+        <div style="overflow-y:auto; width: 1250px; border: solid grey 1px; border-radius: 25px">
+            <div class="w-100 header">
+                <div class="row">
+                    <div class="big-text" style="border-bottom: solid grey 1px">Item Name</div>
+                    <div class="big-text" style="border-bottom: solid grey 1px">Quantity</div>
+                    <div class="big-text" style="border-bottom: solid grey 1px">Price</div>
+                </div>
+            </div>
+            <div class="w-100 body" id="orderStart">
+                
+            </div>
+            <div class="w-100 footer">
+                <span id="totale_carrello"class="big-text">Totale: </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+    <script src="JS/jsBookCart.js"></script>
+    <script src="JS/jsCartOnly.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
